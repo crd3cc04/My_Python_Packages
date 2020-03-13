@@ -1,16 +1,24 @@
 # now its my_lambdata/my_script.py
+from my_lambdata.my_mod import enlarge
+x = 10
+print("ENLARGE", x, "TO",  enlarge(x))
 
 import pandas as pd
+import numpy as np
+
 print("happy tuesday night.")
 
-df = pd.DataFrame ({"Green":[1,2,3], "Red":[3,4,5]})
-print(df.head())
+colors =  {"Green":[np.nan,2,3], 
+           "Red":[3,4, np.nan]}
+
 
 # Looking for null values
-#df.isnull
+df = pd.DataFrame(colors)
+print(df.head())
 
 # Getting report of null values
-#df.isnull().sum()
+df.notnull()
+print(df.head())
 
 # Train/Test 
 #import sklearn.model_selection import train_test_split
