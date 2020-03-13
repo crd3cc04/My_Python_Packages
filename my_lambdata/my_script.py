@@ -1,4 +1,6 @@
-# now its my_lambdata/my_script.py
+# now its my_lambdata/my_script.py or -m my_lambdata.my_script
+# this file is for actual code execution
+
 from my_lambdata.my_mod import enlarge
 x = 10
 print("ENLARGE", x, "TO",  enlarge(x))
